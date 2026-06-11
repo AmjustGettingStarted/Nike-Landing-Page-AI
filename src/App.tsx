@@ -4,8 +4,8 @@ import { BubbleMenu, MenuItem } from "./components/BubbleMenu";
 import { SpotlightReveal } from "./components/SpotlightReveal";
 import { IntroGate } from "./components/IntroGate";
 import { useActiveSection } from "./hooks/useActiveSection";
-import vid1 from "../assets/video/video1.webm";
-import vid2 from "../assets/video/video2.mp4";
+import vid1 from "@/assets/video/video1.webm";
+import vid2 from "@/assets/video/video2.mp4";
 
 export default function App() {
   const [playFirst, setPlayFirst] = useState(false);
@@ -208,7 +208,7 @@ export default function App() {
             </section>
 
             {/* SECTION 2: AEROSPACE PERFORMANCE */}
-            <section
+            {/* <section
               className="relative w-full h-[100dvh] overflow-hidden bg-black text-white flex flex-col justify-between p-6 md:p-12"
               onMouseEnter={() => isSection2Active && setPlaySecond(true)}
               onMouseLeave={() => setPlaySecond(false)}
@@ -223,7 +223,6 @@ export default function App() {
                 active={isSection2Active}
               />
 
-              {/* Telemetry Display Overlay Box */}
               <motion.div
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -319,7 +318,7 @@ export default function App() {
                   </svg>
                 </div>
               </motion.div>
-            </section>
+            </section> */}
           </motion.div>
         )}
       </AnimatePresence>
