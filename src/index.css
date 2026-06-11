@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Manrope", sans-serif;
+  --font-serif: "Instrument Serif", serif;
+  --color-brand-orange: #DA3A16;
+  --color-brand-dark: #050505;
+}

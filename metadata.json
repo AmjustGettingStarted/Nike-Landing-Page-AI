@@ -1,0 +1,6 @@
+{
+  "name": "Interactive Nike Hero Experience",
+  "description": "An interactive digital-first brand experience for Nike featuring dynamic fluid video masks, GSAP menus, and physics-based cursor trails.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
