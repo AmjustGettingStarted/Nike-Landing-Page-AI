@@ -70,10 +70,12 @@ export function IntroGate({ onExitStart, onComplete }: IntroGateProps) {
           <video
             ref={videoRef}
             className="absolute inset-0 w-full h-full object-cover"
-            src="/assets/video/intro.mp4"
+            src={intro}
+            autoPlay
             muted
             playsInline
             preload="auto"
+            onError={(e) => console.log("INTRO VIDEO ERROR", e)}
           />
         </motion.div>
       )}
@@ -94,6 +96,7 @@ export function IntroGate({ onExitStart, onComplete }: IntroGateProps) {
             className="absolute inset-0 w-full h-full object-cover"
             src={intro}
             muted
+            autoPlay
             playsInline
             preload="auto"
           />
